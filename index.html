@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TractorBrain</title>
@@ -18,11 +18,19 @@
             height: 200px; /* Same as width to make it square */
             object-fit: cover; /* Ensures the GIF fills the square */
             clip-path: inset(0 20% 0 20%); /* Crops 20% from left and right */
+            cursor: pointer; /* Changes cursor to indicate clickability */
+            user-select: none; /* Prevents text selection */
+            outline: none; /* Removes default focus outline */
+        }
+        a {
+            text-decoration: none; /* Removes any link underline */
+            outline: none; /* Removes focus outline on click */
         }
     </style>
 </head>
 <body>
-    <img class="gif-container" src="20250221_0913_Rolling Brain, Static Tractor_simple_compose_01jmmqyynzesnb4qmq3yq0zsvb.gif" alt="Animated GIF">
-
-
-</body></html>
+    <a href="mailto:ianmcnanie@gmail.com">
+        <img class="gif-container" src="20250221_0913_Rolling Brain, Static Tractor_simple_compose_01jmmqyynzesnb4qmq3yq0zsvb.gif" alt="Animated GIF">
+    </a>
+</body>
+</html>
