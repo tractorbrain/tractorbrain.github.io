@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+        .gif-container {
+            animation: play-gif 4s infinite alternate;
+        }
+        @keyframes play-gif {
+            0% { transform: scaleX(1); }
+            100% { transform: scaleX(-1); }
+        }
+    </style>
+</head>
+<body>
+    <img class="gif-container" src="tactor.gif" alt="Animated GIF">
+</body>
+</html>
